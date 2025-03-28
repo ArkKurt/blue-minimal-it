@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,7 +36,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0 font-bold text-xl md:text-2xl text-lightblue-900">
-            1A-IT
+            <Link to="/">1A-IT</Link>
           </div>
 
           {/* Desktop Menu */}
@@ -65,6 +66,12 @@ const Navbar = () => {
               >
                 Контакты
               </a>
+              <Link
+                to="/admin"
+                className="text-gray-700 hover:text-lightblue-600 transition-colors"
+              >
+                Админ
+              </Link>
               <Button className="bg-lightblue-500 hover:bg-lightblue-600">
                 Связаться с нами
               </Button>
@@ -115,6 +122,13 @@ const Navbar = () => {
             >
               Контакты
             </a>
+            <Link
+              to="/admin"
+              className="block px-3 py-2 text-gray-700 hover:text-lightblue-600"
+              onClick={toggleMenu}
+            >
+              Админ
+            </Link>
             <div className="px-3 py-2">
               <Button className="w-full bg-lightblue-500 hover:bg-lightblue-600">
                 Связаться с нами
