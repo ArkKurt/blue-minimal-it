@@ -35,7 +35,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0 font-bold text-xl md:text-2xl text-lightblue-900">
-            WebОфис
+            1A-IT
           </div>
 
           {/* Desktop Menu */}

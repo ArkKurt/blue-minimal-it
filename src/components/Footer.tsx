@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="container mx-auto container-padding">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
-            <h3 className="text-xl font-bold mb-4">WebОфис</h3>
+            <h3 className="text-xl font-bold mb-4">1A-IT</h3>
             <p className="text-gray-400 mb-4">
               Разработка корпоративных IT-решений для среднего и крупного бизнеса.
             </p>
@@ -91,7 +91,7 @@ const Footer = () => {
         <hr className="border-gray-800 mb-8" />
 
         <div className="text-center text-gray-500 text-sm">
-          <p>&copy; {currentYear} WebОфис. Все права защищены.</p>
+          <p>&copy; {currentYear} 1A-IT. Все права защищены.</p>
         </div>
       </div>
     </footer>
